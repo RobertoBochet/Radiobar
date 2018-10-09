@@ -1,0 +1,15 @@
+html {
+	font-family: "Open Sans";
+}
+.radiobar {
+	margin: 100px 200px;
+	box-shadow: 0 0 3px black;
+	border-radius: 10px;
+}
+.radiobar > li > label {
+	background-color: #E3E3E3;
+	transition: background-color 1s;
+}
+.radiobar > li > input[type="radio"]:checked + label {
+	background-color: #A2A2A2;
+}

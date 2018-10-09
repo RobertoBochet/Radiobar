@@ -1,0 +1,38 @@
+.radiobar {
+	display: flex;
+	box-sizing: border-box;
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	flex-direction: row;
+	overflow: hidden;
+	
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.radiobar > li {
+	position: relative;
+	flex-grow: 1;
+}
+.radiobar > li > input[type="radio"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	opacity: 0;
+}
+.radiobar > li > label {
+	display: block;
+	padding: 5px 10px;
+	border: solid black;
+    border-width: 0px 1px 0 1px;
+}
+.radiobar > li:first-child > label { border-left-width: 0; }
+.radiobar > li:last-child > label { border-right-width: 0; }
