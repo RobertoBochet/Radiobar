@@ -1,5 +1,5 @@
 .radiobar {
-	display: flex;
+	display: flex !important;
 	box-sizing: border-box;
 	text-align: center;
 	list-style: none;
